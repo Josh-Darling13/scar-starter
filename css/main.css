@@ -89,11 +89,11 @@ textarea {
 /*
   div{
     border: #222 dotted 1px;
-    
+
   }
 */
 
-  
+
   html {
         font-size: 16px;
   }
@@ -105,10 +105,9 @@ textarea {
     text-align: left;
   }
 
-  ul, 
+  ul,
   ol {
     list-style-type: none;
-
     display: flex;
     justify-content: space-around;
   }
@@ -117,50 +116,52 @@ textarea {
    /* margin: 0 1em 0 1em; */
     padding: 0 1em 0 1em;
   }
-  
+
   a {
     color: #e2e3ed;
     text-decoration: none;
   }
-   
+
   h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 1.875em;
     margin: 0;
   }
-   
-  h3, 
+
+  h3,
   h4 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 1.125em;
     margin: 20px 0;
   }
-   
+
   p {
     font-size: .875em;
     line-height: 1.285;
   }
-    
+
   address {
    font-style: normal;
   }
-  
-  img { 
+
+  img {
     width: 100%;
   }
-   
+
   figure {
-          margin: 0;
+    margin: 0;
   }
 
+  button{
+    border-radius: 25px;
+  }
 
   .content-wrapper {
     width: 90%;
     margin: 50px 0;
   }
-
 
 /*
   header/footer
@@ -168,18 +169,17 @@ textarea {
 
   header,
   footer {
-    background-color: #202322;
+    background-color: #170607;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
   }
 
-  
   header {
     padding: 15px 0;
   }
-  
+
   header figure {
     width: 60%;
     display: flex;
@@ -195,10 +195,9 @@ textarea {
     align-items: center;
     flex-flow: row wrap;
   }
-   
-  
+
 .header-divider {
-  background: #3a3a3a; 
+  background: #170607; 
   height: 1px;
   width: 100%;
   margin: 10px 0 20px 0;
@@ -214,7 +213,7 @@ header nav {
   align-items: center;
   flex-flow: row wrap;
 }
-   
+
 header nav ul {
   width: 100%;
   display: flex;
@@ -224,8 +223,6 @@ header nav ul {
 header nav ul li {
   font-size: 1.125em;
 }
-
-
 
 footer {
   text-align: center;
@@ -268,13 +265,10 @@ footer .copyright {
   align-items: center;
 }
 
- 
-  
    /* Hero Area */
-   
- 
+
 .hero-area {
-  background: url(../img/jake-melara.png);
+  background: url(../img/bg-prep.png);
   background-size: cover;
   background-position: center;
   min-height: 500px;
@@ -286,8 +280,8 @@ footer .copyright {
 .hero-area h1 {
   font-size: 2.25em;
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
-  font-weight: 500; 
-  line-height: 1.2; 
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 
@@ -306,7 +300,7 @@ aside {
 aside .form {
   margin-top: 30px;
 }
- 
+
 input[type=text] {
   box-sizing: border-box;
   width: 100%;
@@ -314,12 +308,12 @@ input[type=text] {
   font-style: italic;
   padding: 1em;
 }
- 
+
 input[type=button] {
   width: 100%;
   padding: 20px 0;
   margin-top: 20px;
-  background-color: #2a423a;
+  background-color: #0c0000;
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-weight: 500;
   font-size: 1.125em;
@@ -327,41 +321,67 @@ input[type=button] {
   border: none;
   text-align: center;
   text-transform: uppercase;
+  border-radius: 10px;
+}
+
+input[type=button]:hover {
+  filter: brightness(200%);
+  transition: 0.5s;
 }
 /* Features */
 
 /* Features */
 
 .features {
- background: url('../img/rawpixel-800820-unsplash1.png');
- 
+ background: url('../img/hack_the_gibson.png');
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  
 }
 
 .features h2 {
   margin-bottom: 60px;
+  color: #ffffff;
 }
 
 .features article {
   width: 63%;
   margin: 30px 0;
+
 }
 
 .features .features-items {
+  color: #f7f7f7;
+  /* color: #a6a6a6; */
+  font-size: 1.4rem;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-flow: row wrap;
+  vertical-align: top;
+  line-height: 1.25em;
 }
+
+.pack-feature{
+  display: flex;
+  flex-direction: column;
+}
+
+.pack-feature li::before{
+  color: chartreuse;
+  content: '✓';
+}
+.pack-feature:hover {
+  filter: brightness(200%);
+  transition: 0.5s;
+}
+
 
 .features i {
 	font-size: 3.75em;
-        margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .features p {
@@ -640,6 +660,7 @@ input[type=button] {
     
     .features .features-item-description {
       width: 62%;
+
     }
   
   /* Reviews */
