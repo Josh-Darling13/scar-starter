@@ -41,14 +41,14 @@ html {
  * A better looking default horizontal rule
  */
 
-hr {
+/* hr {
   display: block;
   height: 1px;
   border: 0;
   border-top: 1px solid #ccc;
   margin: 1em 0;
   padding: 0;
-}
+} */
 
 /*
  * Remove the gap between audio, canvas, iframes,
@@ -122,6 +122,11 @@ textarea {
     text-decoration: none;
   }
 
+  a:hover{
+    filter: brightness(300%);
+    transition: 0.5s;
+  }
+
   h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
@@ -161,6 +166,32 @@ textarea {
   .content-wrapper {
     width: 90%;
     margin: 50px 0;
+  }
+
+  hr{
+    border-top: 1px solid red;
+    margin: none;
+    padding: none;
+    width: 100px;
+  }
+
+  checkbox{
+    font-family: system-ui, sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.1;
+    display: grid;
+  grid-template-columns: 1em auto;
+  gap: 1em;
+  }
+
+  input[type="checkbox"]::before {
+    content: "";
+    width: 0.75em;
+    height: 0.75em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
   }
 
 /*
@@ -209,15 +240,16 @@ header nav {
   font-weight: 700;
   text-transform: uppercase;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   flex-flow: row wrap;
+  margin-right:10%;
 }
 
 header nav ul {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 header nav ul li {
@@ -249,7 +281,7 @@ footer .social-icons {
 }
 
 footer .social-icons p {
-  background-color: #527158;
+  background-color: #ff0000;
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -278,10 +310,12 @@ footer .copyright {
 }
 
 .hero-area h1 {
-  font-size: 2.25em;
+  font-size: 2.5em;
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  line-height: 1.2;
+  font-weight: 700;
+  line-height: 1.4;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 
 
@@ -349,12 +383,10 @@ input[type=button]:hover {
 .features article {
   width: 63%;
   margin: 30px 0;
-
 }
 
 .features .features-items {
   color: #f7f7f7;
-  /* color: #a6a6a6; */
   font-size: 1.4rem;
   display: flex;
   justify-content: center;
@@ -367,17 +399,30 @@ input[type=button]:hover {
 .pack-feature{
   display: flex;
   flex-direction: column;
+  padding: 0em 0em 0em 0em;
 }
 
 .pack-feature li::before{
   color: chartreuse;
   content: '✓';
+  padding: 0em 0em 0em 0em;
 }
 .pack-feature:hover {
   filter: brightness(200%);
   transition: 0.5s;
 }
 
+.addOn{
+  display: flex;
+  flex-direction: column;
+}
+
+.services{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: none;
+}
 
 .features i {
 	font-size: 3.75em;
@@ -407,7 +452,12 @@ input[type=button]:hover {
   width: 55%;
   margin: 20px 0;
 }
-  
+
+#cog{
+  line-height: 0;
+  size: 70px;
+  text-align: top;
+}
 
 /* ==========================================================================
    About Page
@@ -456,7 +506,10 @@ input[type=button]:hover {
      ========================================================================== */
   
      .faq {
-      background-color: #527158;
+      background-color: #0008fb;
+      background: url('../img/hack_the_gibson.png');
+      background-size: cover;
+      background-position: center;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -479,6 +532,11 @@ input[type=button]:hover {
     .faq-content {
       margin-bottom: 50px;
     }
+
+    .faq-content i {
+      font-size: 3.75em;
+      margin-bottom: 40px;
+  }
     
     .faq-content h4 {
       line-height: 1.333;
@@ -613,11 +671,12 @@ input[type=button]:hover {
   
     header nav {
       width: 20%;
+      margin-right: none;
     }
-  
+/*   
     header nav {
       width: 20%;
-    }
+    } */
   
     header nav ul {
       display: flex;

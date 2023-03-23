@@ -27,14 +27,15 @@
     <div class="content-wrapper"> <!--************* Content wraper *****************-->
       <figure>
         <a href="index.html">
-          <img src="img/logo.png" alt="crow logo">
+          <img src="img/let_logo.png" alt="crow logo">
         </a>
       </figure>
       <div class="header-divider"></div> <!--************* header divider *****************-->
       <nav> <!--************* Nav *****************-->
         <ul>
-          <li><a href="faq/index.html">FAQ</a></li>
-          <li><a href="about/index.html">ABOUT</a></li>
+          <li><a href="./products/prodmenu.html">PRODUCTS</a></li>
+          <li><a href="./products/prodmenu.html">FAQ</a></li>
+          <li><a href="./products/prodmenu.html">CONTACT</a></li>
         </ul>
       </nav>
     </div>
@@ -44,7 +45,8 @@
   <main> <!--************ MAIN *****************-->
     <section class="hero-area"> <!--************ Hero Area  *****************-->
       <div class="content-wrapper">
-        <h1>There will be a slogan here. It will be highly effective and full of conviction</h1>
+        <h1>There will be a slogan here. It will be highly effective and full of conviction. Like "Get Red!"
+        </h1>
       </div>
     </section>
 
@@ -53,7 +55,9 @@
         <div class="form-description"> <!--************  TEXT form *****************-->
           <h3>Join the mailing List for extra services</h3>
           <p>
-            Find out when we are holding our next retreat and how your company or team can sign up!
+            I can build an auto sender if you need one.
+            <br />
+            Likewise having email addresses or phone # for text wouldn't hurt.
           </p>
         </div>
         <div class="form"> <!--************ INPUTE form *****************-->
@@ -68,15 +72,17 @@
     <section class="features"> <!--************ features  *****************-->
       <div class="content-wrapper">
         <div class="features-items">
-          <article>
+          <article class="services">
             <p class="fontawesome-icon">
-              <i class='fas fa-cog fa-spin fa-3x'></i>
+
             </p>
             <p class="features-item-description">
-              Basic package
-              <hr />
-              $9.95/monthly
-              <button class="purchase">Click Here!</button>
+            <p class="fontawesome-icon">
+              <i class='fas fa-cog fa-3x' style="color: #ff0a0a;"></i>
+            </p>
+            Basic package
+            <hr style="color: antiquewhite;" />
+            <button class="purchase">$9.95/monthly!</button>
             </p>
             <ul class="pack-feature">
               <li> Feature!</li>
@@ -84,15 +90,14 @@
               <li> A blazingly fast, game changing, wholistic approach to making waffles out of bacon.</li>
             </ul>
           </article>
-          <article>
+          <article class="services">
             <p class="fontawesome-icon">
-              <i class='fas fa-wrench fa-spin fa-3x'></i>
+              <i class='fas fa-wrench fa-3x' style="color: #ff0a0a;"></i>
             </p>
             <p class="features-item-description">
               Better Package
               <hr />
-              $19.95/monthly
-              <button class="purchase">Click Here!</button>
+              <button class="purchase">$19.95/monthly</button>
             </p>
             <ul class="pack-feature">
               <li> Feature!</li>
@@ -104,15 +109,14 @@
               <li> And more!</li>
             </ul>
           </article>
-          <article>
+          <article class="services">
             <p class="fontawesome-icon">
-              <i class="fa-solid fa-truck-fast"></i>
+              <i class="fa-solid fa-heart fa-beat" style="color: #ff0a0a;"></i>
             </p>
             <p class="features-item-description">
-              Better Package
+              Best Package
               <hr />
-              $1,900,000.95/monthly
-              <button class="purchase">Click Here!</button>
+              <button class="">$1,900,000.95/monthly</button>
             </p>
             <ul class="pack-feature">
               <li> Feature!</li>
@@ -134,20 +138,21 @@
 
     <section class="reviews"> <!--************ reviews  *****************-->
       <div class="content-wrapper">
-        <h2>Be a better team in 5 days, like this one.</h2>
+        <h2>We keep our clients happy.</h2>
         <article>
           <figure>
-            <img src="img/omar-lopez-unsplash.png" alt="Group of happy people at an outdoor retreat.">
+            <img src="img/keys.jfif" alt="Keyboard.">
+            <img src="img/keys.jfif" alt="Keyboard.">
+
           </figure>
           <div>
-            <h3>LaCrue Bottling Co. October 2018</h3>
+            <h3>A Testamonial:</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-              ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              Duis aute irure dolor in reprehenderit in voluptate velit
-              esse cillum dolore eu fugiat nulla pariatur.
+              The image is a place keeper. I don't know if you have images you'd like to use. Likewise, I'll find some
+              stock images and tweak them.
+            </p>
+            <p>
+              --A Person's name, Some place
             </p>
           </div>
         </article>
@@ -186,23 +191,25 @@
       </div>
 
       <div class="copyright">
-        <p>Copyright 2018 | Unplugged</p>
+        <p>Copyright
+          <script>document.write(new Date().getFullYear());</script> | Scarlet Co LLC.
+        </p>
       </div>
     </div>
     <!--footer content-wrapper ends-->
 
   </footer>
 
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <!-- <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/main.js"></script> -->
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <!-- <script src="https://www.google-analytics.com/analytics.js" async></script> -->
 </body>
 
 </html>
