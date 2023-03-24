@@ -10,7 +10,7 @@
   <meta property="og:type" content="">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
-  <link rel="manifest" href="site.webmanifest">
+  <!-- <link rel="manifest" href="site.webmanifest"> -->
   <link rel="icon" type="image/png" href="icon.png">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
@@ -21,14 +21,14 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <meta name="theme-color" content="#fafafa">
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 
 <body>
   <header> <!--************* HEADER *****************-->
     <div class="content-wrapper"> <!--************* Content wraper *****************-->
       <figure>
-        <a href="index.html">
-          <img src="img/let_logo.png" alt="crow logo">
+        <img src="img/let_logo.png" alt="crow logo">
         </a>
       </figure>
       <div class="header-divider"></div> <!--************* header divider *****************-->
@@ -60,13 +60,8 @@
             Likewise having email addresses or phone # for text wouldn't hurt.
           </p>
         </div>
-        <div class="form"> <!--************ INPUTE form *****************-->
-          <h3>Find out more</h3>
-          <input type="text" name="name" value="name@email.com">
-          <input type="button" value="Download Itinerary">
-        </div>
-      </div>
-      <!-- aside content wrapper ends -->
+        <div class="form" id="formID"> <!--************ INPUTE form *****************-->
+          <script type="text/javascript" src="https://form.jotform.com/jsform/230826165542152"></script>
     </aside>
 
     <section class="features"> <!--************ features  *****************-->
@@ -187,10 +182,10 @@
                   <i class="fa-solid fa-phone fa-shake fa-2xl" id='phone'></i>
                 </p>
                 <p id="contacts">
-                555-555-5555<br>
+                  555-555-5555<br>
               </a>
               <a href="mailto:skarlet@skarlet.org">
-              skarlet@skarlet.org
+                skarlet@skarlet.org
               </a>
             </p>
           </address>
@@ -222,10 +217,12 @@
     <!--footer content-wrapper ends-->
 
   </footer>
-
-  <!-- <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="/js/main.js"></script>
   <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script> -->
+  <!-- <script src="main.js"></script> -->
+  <!-- <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <!--  -->
+  -->
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
