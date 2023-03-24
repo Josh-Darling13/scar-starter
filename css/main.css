@@ -406,7 +406,14 @@ input[type=button]:hover {
   color: chartreuse;
   content: '✓';
   padding: 0em 0em 0em 0em;
+  line-height: 1.75em;
 }
+
+.addOn li::before{
+  content: '⭐';
+  line-height: 1.75em;
+}
+
 .pack-feature:hover {
   filter: brightness(200%);
   transition: 0.5s;
