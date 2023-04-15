@@ -1,1 +1,1 @@
-# scar-starter
+# scar.web.1.0
